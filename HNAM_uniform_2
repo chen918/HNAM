@@ -180,8 +180,6 @@ mean(medianRho_v)
 
 mean(medianRho_v)-rho
 
-mean(varRho_v)
-
 sum((medianRho_v-rho)^2)/itl
 
 coverage/itl
