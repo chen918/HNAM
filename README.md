@@ -5,3 +5,5 @@ In particular, HNAM_uniform_1 uses a uniform prior of rho with a range from -1 t
 Extended_HNAM_uniform_1, Extended_HNAM_uniform_2 and Extended_HNAM_uniform_T are for the extended model in the paper with different prior distributions of rho.
 Similarly, Extended_HNAM_uniform_1 uses a uniform prior of rho with a range from -1 to 1; Extended_HNAM_uniform_2 uses a uniform prior of rho with a range from 1/lamda_min to 1/lamda_max; Extended_HNAM_uniform_T uses a transformed uniform prior of rho.
 For each script, the output includes the posterior median estimator of coffefients, error terms and rho (and alpha for the extended model). In adiition, it also includes the mean squared error of rho, 95% coverage rate of rho, 95% equal-tailed credible interval of rho and average width of credible intrerval of rho and those of alpha for the extended model.  
+
+Supplementary materials.pdf contains simulation results and derivation of conditional posteriors.
