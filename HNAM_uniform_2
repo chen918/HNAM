@@ -48,7 +48,12 @@ for (k in 1:itl){
   
   W=rgraph(node, m=1, tprob=ddensity, mode="graph", diag = F, replace=FALSE,
            tielist=NULL, return.as.edgelist= F )
-  
+
+  ##Weighted edge network
+  # W[lower.tri(W)][which(W[lower.tri(W)]!=0)]=rgamma(n = length(which(W[lower.tri(W)]!=0)), shape = 0.1, scale = 2000)
+  # 
+  # W[upper.tri(W)]<-t(W)[upper.tri(W)]
+
   W=t(apply(W, 1, function(x) (x/sum(x))))
   
   W[which(is.na(W))]=1/(node-1)
